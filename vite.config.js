@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'https://youtube-backend-oi4y.onrender.com/api/v1'
+      '/api': 'https://vid-nest-backend.vercel.app'
     }
   }
 })
