@@ -81,7 +81,7 @@ vidNest is a cutting-edge social media platform that seamlessly integrates the b
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/Vedant1612/youtube-frontend.git
+    git clone https://github.com/primebipin/VidNest_frontend.git
     ```
 
 2. **Install dependencies:**
