@@ -12,11 +12,11 @@ vidNest is a cutting-edge social media platform that seamlessly integrates the b
 
 | Content            | Link                                                                        |
 | -------------------| ----------------------------------------------------------------------------|
-| API Documentation  | [click here](https://documenter.getpostman.com/view/35956208/2sA3XWbHmZ)    |
-| Model              | [click here ](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj)         |
-| Live Link          | [click here ](https://youtube-frontend-knx4.onrender.com/)                  |
-| Frontend Repo      | [click here ](https://github.com/Vedant1612/youtube-frontend.git)           |
-| Backend Repo       | [click here ](https://github.com/Vedant1612/Youtube-Backend.git)            |
+| API Documentation  | [click here]()    |
+| Model              | [click here ]()         |
+| Live Link          | [click here ]()                  |
+| Frontend Repo      | [click here ]()           |
+| Backend Repo       | [click here ]()            |
 
 ## Features
 
