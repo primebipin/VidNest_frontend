@@ -44,10 +44,10 @@ function VideoDetail() {
 
     return (
         <>
-            <Navbar/>
+            <Navbar />
             <Video
-                src={video?.videoFile}
-                poster={video?.thumbnail}
+                src={video?.videoFile?.url}
+                poster={video?.thumbnail?.url}
             />
             <Description
                 avatar={video?.owner?.avatar}

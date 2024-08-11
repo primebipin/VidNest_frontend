@@ -81,17 +81,17 @@ function Sidebar() {
     return (
         <>
             <div className="sm:block hidden">
-                <div className="text-white lg:w-56 md:w-44 w-16 sm:p-3 p-2 border-slate-600 border-r h-screen flex flex-col justify-between">
+                <div className="text-white lg:w-56 md:w-44 w-16 sm:p-3 p-2 h-screen flex flex-col justify-between">
                     <div className="flex flex-col gap-4 mt-5">
                         {sidebarTopItems.map((item) => (
                             <NavLink
                                 to={item.url}
                                 key={item.title}
                                 className={({ isActive }) =>
-                                    isActive ? "bg-purple-500" : ""
+                                    isActive ? "bg-yellow-500" : ""
                                 }
                             >
-                                <div className="flex items-center gap-2 justify-center sm:justify-start hover:bg-purple-500 cursor-pointer py-1 px-2 border border-slate-600">
+                                <div className="flex items-center gap-2 justify-center sm:justify-start hover:bg-yellow-500 cursor-pointer py-1 px-2">
                                     {item.icon}
                                     <span className="text-base hidden md:block">
                                         {item.title}
@@ -104,7 +104,7 @@ function Sidebar() {
                     <div className="space-y-4 mb-10">
                         {username && (
                             <div
-                                className="flex items-center gap-2 justify-center sm:justify-start hover:bg-purple-500 cursor-pointer py-1 px-2 border border-slate-600"
+                                className="flex items-center gap-2 justify-center sm:justify-start hover:bg-yellow-500 cursor-pointer py-1 px-2 "
                                 onClick={() => logout()}
                             >
                                 <IoMdLogOut size={25} />
@@ -113,7 +113,7 @@ function Sidebar() {
                                 </span>
                             </div>
                         )}
-                        <div className="flex items-center gap-2 justify-center sm:justify-start hover:bg-purple-500 cursor-pointer py-1 px-2 border border-slate-600">
+                        <div className="flex items-center gap-2 justify-center sm:justify-start hover:bg-yellow-500 cursor-pointer py-1 px-2">
                             <CiSettings size={25} />
                             <span className="text-base hidden md:block">
                                 Settings
@@ -130,7 +130,7 @@ function Sidebar() {
                         to={item.url}
                         key={item.title}
                         className={({ isActive }) =>
-                            isActive ? "text-purple-500" : ""
+                            isActive ? "text-yellow-500" : ""
                         }
                     >
                         <div className="flex flex-col items-center gap-1 cursor-pointer p-1">

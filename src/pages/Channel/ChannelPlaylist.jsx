@@ -47,7 +47,7 @@ function ChannelPlaylist() {
                 {authId === userId && (
                     <div className="w-full flex justify-center mt-5">
                         <Button
-                            className="bg-purple-500 text-sm p-2"
+                            className="bg-yellow-500 text-sm p-2"
                             onClick={() =>
                                 setOpenCreatePlaylist((prev) => !prev)
                             }
@@ -99,7 +99,7 @@ function ChannelPlaylist() {
                                     </span>
                                 )}
                                 <Button
-                                    className="bg-purple-500 text-sm p-2 w-full"
+                                    className="bg-yellow-500 text-sm p-2 w-full"
                                     type="submit"
                                 >
                                     Create Playlist

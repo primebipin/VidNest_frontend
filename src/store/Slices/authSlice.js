@@ -206,7 +206,6 @@ const authSlice = createSlice({
         });
     },
 });
-
 // export const { updateUser } = authSlice.actions;
 
 export default authSlice.reducer;

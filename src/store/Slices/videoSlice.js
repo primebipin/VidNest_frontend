@@ -19,8 +19,8 @@ export const getAllVideos = createAsyncThunk(
     "getAllVideos",
     async ({ userId, sortBy, sortType, query, page, limit }) => {
         try {
-            const url = new URL(`${BASE_URL}/videos/`);
-            // console.log(url);
+            const url = new URL(`${BASE_URL}/videos`);
+
             if (userId) url.searchParams.set("userId", userId);
             if (query) url.searchParams.set("query", query);
             if (page) url.searchParams.set("page", page);
@@ -31,12 +31,11 @@ export const getAllVideos = createAsyncThunk(
             }
 
             const response = await axiosInstance.get(url);
+
             return response.data.data;
         } catch (error) {
-            // console.log("wer")
             toast.error(error?.response?.data?.error);
             throw error;
-
         }
     }
 );
@@ -45,11 +44,11 @@ export const publishAvideo = createAsyncThunk("publishAvideo", async (data) => {
     const formData = new FormData();
     formData.append("title", data.title);
     formData.append("description", data.description);
-    formData.append("videoFile", data?.videoFile[0]);
-    formData.append("thumbnail", data?.thumbnail[0]);
+    formData.append("videoFile", data.videoFile[0]);
+    formData.append("thumbnail", data.thumbnail[0]);
 
     try {
-        const response = await axiosInstance.post("/videos/", formData);
+        const response = await axiosInstance.post("/videos", formData);
         toast.success(response?.data?.message);
         return response.data.data;
     } catch (error) {
@@ -176,6 +175,7 @@ const videoSlice = createSlice({
         });
     },
 });
+
 
 export const { updateUploadState, makeVideosNull } = videoSlice.actions;
 

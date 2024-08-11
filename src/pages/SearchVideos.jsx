@@ -47,12 +47,12 @@ function SearchVideos() {
                 className="w-full h-10 flex items-center font-bold justify-end cursor-pointer px-8"
                 onClick={() => setFilterOpen((prev) => !prev)}
             >
-                <span className="text-white hover:text-purple-500">
+                <span className="text-white hover:text-yellow-500">
                     Filters
                 </span>
                 <FaFilter
                     size={20}
-                    className="text-purple-500 hover:text-purple-800"
+                    className="text-yellow-500 hover:text-yellow-800"
                 />
             </div>
             <div className="w-full text-white">

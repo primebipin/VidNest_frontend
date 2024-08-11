@@ -80,12 +80,12 @@ function Navbar() {
                 ) : (
                     <div className="space-x-2 sm:block hidden">
                         <Link to={"/login"}>
-                            <Button className="bg-[#222222] border hover:bg-black border-slate-500 sm:px-4 sm:py-2 p-2">
+                            <Button className=" sm:px-4 sm:py-2 p-2">
                                 Login
                             </Button>
                         </Link>
                         <Link to={"/signup"}>
-                            <Button className="font-semibold border hover:bg-[#222222] border-slate-500 sm:px-4 sm:py-2 ">
+                            <Button className="sm:px-4 sm:py-2 ">
                                 Sign up
                             </Button>
                         </Link>
@@ -104,8 +104,8 @@ function Navbar() {
 
                 {/* Side bar for smaller screens */}
                 {toggleMenu && (
-                    <div className="fixed right-0 top-0 text-white flex flex-col border-l h-screen w-[70%] bg-[#0F0F0F] sm:hidden rounded-lg outline-none">
-                        <div className="w-full border-b h-20 flex items-center mb-2 justify-between px-3">
+                    <div className="fixed right-0 top-0 text-white flex flex-col h-screen w-[70%] bg-[#0F0F0F] sm:hidden rounded-lg outline-none">
+                        <div className="w-full flex items-center mb-2 justify-between px-3">
                             <div className="flex items-center gap-2">
                                 <Logo />
                             </div>
@@ -128,7 +128,7 @@ function Navbar() {
                                             isActive ? "bg-purple-500" : ""
                                         }
                                     >
-                                        <div className="flex items-center border border-slate-500 gap-5 px-3 py-1 hover:bg-purple-500">
+                                        <div className="flex items-center gap-5 px-3 py-1 hover:bg-yellow-500">
                                             <div>{item.icon}</div>
                                             <span className="text-lg">
                                                 {item.title}
@@ -141,19 +141,19 @@ function Navbar() {
                             {!authStatus ? (
                                 <div className="flex flex-col space-y-5 mb-3">
                                     <Link to={"/login"}>
-                                        <Button className="w-full bg-[#222222] border hover:bg-white hover:text-black border-slate-500 py-1 px-3">
+                                        <Button className="w-full bg-[#222222]  hover:bg-white hover:text-black py-1 px-3">
                                             Login
                                         </Button>
                                     </Link>
                                     <Link to={"/signup"}>
-                                        <Button className=" w-full font-semibold border border-slate-500 hover:bg-white hover:text-black py-1 px-3">
+                                        <Button className=" w-full font-semibold hover:bg-white hover:text-black py-1 px-3">
                                             Sign up
                                         </Button>
                                     </Link>
                                 </div>
                             ) : (
                                 <div
-                                    className="flex gap-2 justify-start items-start cursor-pointer py-1 px-2 border border-slate-600"
+                                    className="flex gap-2 justify-start items-start cursor-pointer py-1 px-2"
                                     onClick={() => logout()}
                                 >
                                     <IoMdLogOut size={25} />
